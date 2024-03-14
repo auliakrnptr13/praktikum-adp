@@ -1,0 +1,44 @@
+program  tinggi_mahasiswa_asrama;
+
+var
+    Nama:String;
+    NoBP:String[10];
+    Urutan_shift:Integer;
+    a, b, c, d, e: Integer;
+    rata_rata, ragam, simpangan_baku: Real;
+    
+
+begin
+   WriteLn('SOAL 2');read;
+   WriteLn();
+   WriteLn('✧ MENGHITUNG RATA-RATA,RAGAM DAN SIMPANGAN BAKU ✧');read;
+   WriteLn('==================================================');read;
+   WriteLn();
+   Nama:= 'Aulia Kurnia Putri ';
+   NoBp:='2310432033';
+   Urutan_shift:=4;
+   WriteLn('Nama =',Nama);
+   WriteLn('NoBP =',NoBP);
+   WriteLn('Urutan_shift =',Urutan_shift);
+   WriteLn();
+    
+  a := 159;
+  WriteLn('tinggi a =', a);
+  b := 164;
+  WriteLn('tinggi b =', b);
+  c := 159;
+  WriteLn('tinggi c =', c);
+  d := 167;
+  WriteLn('tinggi d =', d);
+  e := 160 ;
+  WriteLn('tinggi e =', e);
+
+  rata_rata := (a+ b + c + d + e) / 5;
+  ragam := ((Sqr(a- rata_rata) + Sqr(b- rata_rata) + Sqr(c - rata_rata) + Sqr(d - rata_rata) + Sqr(e - rata_rata)) / 5);
+  simpangan_baku := sqrt(ragam);
+
+  WriteLn('nilai rata-rata adalah=', rata_rata:2:1);
+  WriteLn('nilai ragam adalah=', ragam:2:1);
+  WriteLn('nilai simpangan baku=', simpangan_baku:2:1);
+  ReadLn();
+end.
