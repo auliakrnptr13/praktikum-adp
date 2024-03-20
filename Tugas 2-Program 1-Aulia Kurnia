@@ -1,7 +1,7 @@
 program Pembelian_Tiket_Pesawat;
 var
   Nama, JenisKelamin, KotaTujuan, JenisMaskapai: string;
-  Umur, JumlahTiket, Hargatiket, Totalharga: integer;
+  Umur, JumlahKursi, Hargatiket, Totalharga: integer;
   Diskon: real;
 
 begin
@@ -22,12 +22,12 @@ begin
    WriteLn('2. Labuan Bajo');
    WriteLn('3. Manado');
    Write('Masukkan nomor tujuan: ');
-   ReadLn(jumlahtiket);
-   if jumlahtiket = 1 then
+   ReadLn(jumlahkursi);
+   if jumlahkursi = 1 then
     kotatujuan := 'Semarang'
-   else if jumlahtiket= 2 then
+   else if jumlahkursi= 2 then
     kotatujuan := 'Labuan Bajo'
-   else if jumlahtiket= 3 then
+   else if jumlahkursi= 3 then
     kotatujuan := 'Manado';
     WriteLn();
     
@@ -36,31 +36,31 @@ begin
    WriteLn('2. Bisnis');
    WriteLn('3. First Class');
    Write('Masukkan nomor jenis maskapai: ');
-   ReadLn(jumlahtiket);
-   if jumlahtiket = 1 then
+   ReadLn(jumlahkursi);
+   if jumlahkursi = 1 then
    begin
     jenismaskapai := 'Ekonomi';
-    hargatiket :=1175000;
+    hargatiket :=875000;
   end
-  else if jumlahtiket = 2 then
+  else if jumlahkursi = 2 then
   begin
     jenismaskapai := 'Bisnis';
-    hargatiket := 4500000;
+    hargatiket := 1200000 ;
   end
-  else if jumlahtiket = 3 then
+  else if jumlahkursi = 3 then
   begin
     jenismaskapai := 'First Class';
-    hargatiket := 6000000;
+    hargatiket := 2350000 ;
   end;
 
-  Write('Jumlah Tiket: ');
-  ReadLn(jumlahtiket);
+  Write('Jumlah Kursi: ');
+  ReadLn(jumlahkursi);
   
-  if jumlahtiket > 3 then
+  if jumlahkursi > 3 then
     diskon := 0.25 * hargatiket
   else
     diskon := 0;
-  totalharga := (hargatiket * jumlahtiket) - Trunc(diskon);
+  totalharga := (hargatiket * jumlahkursi) - Trunc(diskon);
   WriteLn(); 
 
   WriteLn(' Struk Pemesanan Tiket Pesawat');
@@ -70,7 +70,7 @@ begin
   WriteLn('Jenis Kelamin   :', jeniskelamin);
   WriteLn('Kota Tujuan     :', kotatujuan);
   WriteLn('Jenis Maskapai  :', jenismaskapai);
-  WriteLn('Jumlah Tiket    :', jumlahtiket);
+  WriteLn('Jumlah Kursi    :', jumlahkursi);
   WriteLn();
   WriteLn('Total Harga     : Rp', totalharga);
   WriteLn('=============ThankYou=============');
