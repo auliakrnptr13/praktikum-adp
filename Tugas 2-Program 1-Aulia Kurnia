@@ -63,8 +63,7 @@ begin
   totalharga := (hargatiket * jumlahkursi) - Trunc(diskon);
   WriteLn(); 
 
-  WriteLn(' Struk Pemesanan Tiket Pesawat');
-  WriteLn('==================================');
+  WriteLn('•••Struk Pembelian Tiket Pesawat•••');
   WriteLn('Nama            :', nama);
   WriteLn('Umur            :', umur);
   WriteLn('Jenis Kelamin   :', jeniskelamin);
