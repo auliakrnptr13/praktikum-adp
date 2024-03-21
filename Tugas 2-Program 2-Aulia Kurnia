@@ -1,0 +1,45 @@
+print('•••PEMBELIAN TIKET PESAWAT AULIA•••')
+print()
+
+print('DATA DIRI')
+nama = input("Nama : ")
+umur = int(input("Umur: "))
+jenis_kelamin = input("Jenis Kelamin : ")
+print()
+
+print("TUJUAN KEBERANGKATAN")
+print("1. Semarang")
+print("2. Labuan Bajo")
+print("3. Manado")
+kota_tujuan = input("Masukkan nomor tujuan: ")
+print()
+
+print("JENIS MASKAPAI")
+print("1. Ekonomi - Rp875.000")
+print("2. Bisnis - Rp1.200.000")
+print("3. First Class - Rp2.350.000")
+jenis_maskapai = input("Masukkan nomor jenis maskapai: ")
+jumlah_kursi = int(input("Masukkan jumlah kursi yang dibeli: "))
+
+if jenis_maskapai == '1':
+    total_harga = jumlah_kursi * 875000
+elif jenis_maskapai == '2':
+    total_harga = jumlah_kursi * 1200000
+elif jenis_maskapai == '3':
+    total_harga = jumlah_kursi * 2350000
+    
+if jumlah_kursi > 3:
+    diskon = 0.25 * total_harga
+    total_harga -= diskon
+    
+print()
+print("STRUK PEMESANAN")
+print("===============")
+print("Nama:", nama)
+print("Usia:", umur)
+print("Jenis Kelamin:", jenis_kelamin)
+print("Kota Tujuan:", kota_tujuan)
+print("Jenis Maskapai:", jenis_maskapai)
+print("Jumlah Kursi:", jumlah_kursi)
+print("Total Harga: Rp", total_harga)
+print("======ThankYou======")
