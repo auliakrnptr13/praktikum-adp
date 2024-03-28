@@ -1,0 +1,49 @@
+program pola_piramida_alphabet;
+uses crt;
+
+var
+   nama:String;
+   nobp:String[10];
+   shift:Integer;
+   n, i, j, k: integer;
+   c: char;
+
+begin
+  clrscr;
+   WriteLn('✧ POLA PIRAMIDA MENGGUNAKAN ALPHABET ✧');
+   WriteLn('====================================');
+   WriteLn();
+   Nama:= 'Aulia Kurnia Putri ';
+   NoBp:='2310432033';
+   Shift:=4;
+   WriteLn('Nama =',Nama);
+   WriteLn('Nobp =',Nobp);
+   WriteLn('Shift =',Shift);
+   WriteLn();
+    
+  write('Masukkan jumlah huruf pada Piramida: ');
+  readln(n);
+  
+  for i := 1 to n do
+  begin
+    c := 'A';
+    
+  for j := 1 to n - i do
+      write(' ');
+      
+  for k := 1 to 2 * i - 1 do
+  begin
+      write(c);
+ 
+  if k < i then
+       Inc(c)
+      else
+       Dec(c);
+  end;
+    
+    writeln;
+  end;
+  
+  readln;
+end.
+
