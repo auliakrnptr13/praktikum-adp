@@ -1,0 +1,21 @@
+print("••••••Menghitung Jumlah DOR••••••")
+print()
+
+total_dor = 0
+
+for i in range (1,101):
+   if i % 3 == 0 or i % 5 == 0:
+   	print("DOR",end =" ")
+   	total_dor += 1
+   
+   
+   else:
+   	print(i, end =" ")
+   
+   if i % 10 == 0:
+   	print()
+
+print()
+print('==================================')
+print("Total DOR yang muncul sebanyak =",total_dor)
+print ('==================================')  	
