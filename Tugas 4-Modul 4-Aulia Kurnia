@@ -1,6 +1,11 @@
 print("••••••Menghitung Jumlah DOR••••••")
 print()
 
+print('Nama       : Aulia Kurnia Putri')
+print('NIM        : 2310432033')
+print('Shift      : 4')
+
+print()
 total_dor = 0
 
 for i in range (1,101):
@@ -16,6 +21,6 @@ for i in range (1,101):
    	print()
 
 print()
-print('==================================')
+print('===================================')
 print("Total DOR yang muncul sebanyak =",total_dor)
-print ('==================================')  	
+print('===================================') 	
