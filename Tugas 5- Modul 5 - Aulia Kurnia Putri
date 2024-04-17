@@ -1,20 +1,20 @@
-print(' ✧ ARRAY ✧ ')
-print (' Nama : Aulia Kurnia Putri')
+rint(' ✧ ARRAY ✧ ')
+print (' Nama    : Aulia Kurnia Putri')
 print (' NIM     : 2310432033')
 print (' Shift   : 4')
 print()
 
 def input_array():
     while True:
-        array = input("Masukkan array bilangan bulat dari 0 sampai 9 : ").split()
+        array = input(" Masukkan array bilangan bulat dari 0 sampai 9 : ").split()
         try:
             array = [int(num) for num in array]
             if all(0 <= num <= 9 for num in array):
                 return array
             else:
-                print("Masukkan angka antara 0 dan 9 ")
+                print(" Masukkan array kembali! ")
         except ValueError:
-            print("Masukkan hanya angka bulat ")
+            print(" Masukkan hanya angka bulat ")
 
 def main():
     print(" Array U ")
@@ -29,8 +29,8 @@ def main():
 
     print("Array yang hanya berada di A :", u )
     print("Array yang hanya berada di B :", v )
-    print("Array yang berada di A dan B  :", both)
+    print("Array yang berada di A dan B :", both)
 
 if __name__ == "__main__":
     main()
-  
+    
