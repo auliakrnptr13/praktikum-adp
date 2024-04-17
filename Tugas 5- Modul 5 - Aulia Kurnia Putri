@@ -12,7 +12,7 @@ def input_array():
             if all(0 <= num <= 9 for num in array):
                 return array
             else:
-                print(" Masukkan array kembali! ")
+                print(" MASUKKAN ARRAY KEMBALI!! ")
         except ValueError:
             print(" Masukkan hanya angka bulat ")
 
