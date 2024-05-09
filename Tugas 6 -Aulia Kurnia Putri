@@ -1,0 +1,44 @@
+print(' Nama  : Aulia Kurnia Putri')
+print(' NIM   : 2310432033')
+print(' Shift : 4')
+print(' TUGAS MODUL 6 ')
+print()
+a = [
+    [ 1,"Pepsodent",10000,25],
+    [ 2,"Bimoli",16000,18],
+    [ 3,"Indomie",3500,30],
+    [ 4,"Rinso",1000,54],
+    [ 5,"Nabati",2000,28],
+    [ 6,"Sunsilk",13000,15]
+]
+
+total_keuntungan = 0
+keuntungan_terbesar = 0
+keuntungan_terkecil = float('inf')
+nama_barang_terbesar =" "
+nama_barang_terkecil =" "
+
+print("       Tabel Harga dan Stok Barang ")
+print(" ---------------------------------------")
+print(" | No | Nama Barang   | Harga   | Stok |")
+print(" ---------------------------------------")
+for i in a:
+    no_i = i[0]
+    nama_i = i[1]
+    harga_i = i[2]
+    stok_i = i[3]
+    print(f" | {i[0]:<3}| {i[1]:<13} | {i[2]:<7} | {i[3]:<4} |")
+    keuntungan = i[2] * i[3]
+    total_keuntungan += keuntungan
+    if keuntungan > keuntungan_terbesar:
+       keuntungan_terbesar = keuntungan
+       nama_barang_terbesar = nama_i
+    if keuntungan < keuntungan_terkecil:
+       keuntungan_terkecil = keuntungan
+       nama_barang_terkecil = nama_i
+
+print(" ---------------------------------------") 
+print()
+print(" a. Nama barang dengan keuntungan terbesar:", nama_barang_terbesar)
+print(" b. Nama barang dengan keuntungan terkecil:", nama_barang_terkecil)
+print(" c. Total keuntungan yang diperoleh :", total_keuntungan)
