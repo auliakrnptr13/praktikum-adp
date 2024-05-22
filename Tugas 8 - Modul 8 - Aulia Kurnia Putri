@@ -28,12 +28,13 @@ def tampilkan_semua_transaksi():
         data_keuangan = file.readlines()
     if data_keuangan:
         print("\n                Tabel Data Keuangan Aulia ")
-        print("-" * 65)
-        print(f"| {'Tanggal':<12} | {'Keterangan':<20} | {'Jumlah':<10} | {'Tipe':<9}  |")
-        print("-" * 65)
+        print("-" * 70)
+        print(f"| {'Tanggal':<12} | {'Keterangan':<20} | {'Jumlah':<10} | {'Tipe':<14}  |")
+        print("-" * 70)
         for data in data_keuangan:
             tanggal, keterangan, jumlah, tipe = data.strip().split(",")
-            print(f"| {tanggal:<12} | {keterangan:<20} | {jumlah:<10} | {tipe:<9}  |")
+            print(f"| {tanggal:<12} | {keterangan:<20} | {jumlah:<10} | {tipe:<14}  |")
+            print("-" * 70)
     else:
         print(" Data keuangan kosong.")
 
