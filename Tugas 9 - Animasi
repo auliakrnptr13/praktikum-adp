@@ -1,0 +1,31 @@
+import os
+os.system('cls')
+from termcolor import colored, cprint
+
+for i in range (1):
+    print(" "*12,end=" ")
+    cprint("|||",'red')
+for i in range(3):
+    print(" "*11,end=" ")
+    cprint(" "*5,'magenta',"on_light_grey")
+for i in range(3):
+    print(" "*9,end=" ")
+    cprint("~"*9,'white',"on_light_magenta")
+for i in range(3):
+    print(" "*7,end=" ")
+    cprint(" "*13,'black',"on_light_grey")
+for i in range (1):
+    print(" "*4,end=" ")
+    cprint(" "*19,"white","on_light_magenta",end="")
+    print( )
+     
+for i in range (1):
+    print(" "*4,end=" ")
+    cprint(" 🎀𝐻𝒶𝓅𝓅𝓎  𝐵𝒾𝓇𝓉𝒽𝒹𝒶𝓎🎀 ","white","on_light_magenta")
+for i in range (1):
+    print(" "*4,end=" ")
+    cprint(" "*19,"white","on_light_magenta",end="")
+    print( )
+
+    print(" "*1,end=" ")
+    cprint("><><><><><><><><><><><><","magenta","on_light_grey")
